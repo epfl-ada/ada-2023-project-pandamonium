@@ -19,13 +19,6 @@ The Bechdel test is gaining prominence in academic circles as a benchmark for ev
 "Femme Frames Unveiled: A Bechdel Test vs. Female Cast Ratio Exploration
 Femme Metrics: A Comparative Analysis of Bechdel and Female Cast Ratio -->
 
-
-
-
-
-
-
-
 In "Femme Frames," we scrutinize the portrayal of women in film through the Bechdel Test—requiring at least two women to converse about something other than a man. Our data-driven exploration investigates patterns and disparities in gender representation, sparking a conversation about storytelling's societal impact. Recent films like Oppenheimer and Avatar 2, failing the Bechdel Test, underscore its continued relevance. This project aims to unveil insights into cinematic narratives and promote positive change within the industry. Join us on a journey where every frame counts and every story told contributes to a more inclusive cinematic landscape.
 
 
@@ -34,19 +27,19 @@ In "Femme Frames," we scrutinize the portrayal of women in film through the Bech
 1. Can we develop a formulation that accounts for the representation of women in movies?
 2. Introducing the Bechdel test, how are these scores and trends changed along with the other attributes?
 3. Is it possible to see a discrepancy comparing the women's representation score and the Bechdel test?
-4. Furthermore, can we correlate a movie’s success (e.g. box office revenue) to the representation of women?
 
 
 ## Proposed Additional Datasets
 -[**Bechdel Test**](https://bechdeltest.com/) - The Bechdel Test Movie List, comprising more than 10,130 movies, is retrieved through its API, offering a dataset with seven fields. Key features include imdbid (facilitating integration with other datasets), title, year, and rating. The rating scale delineates the Bechdel Test outcomes: 0 signifies the absence of two women, 1 indicates no conversation, 2 denotes discussion about a man, and 3 signifies a successful passage of the test. 
 
--[**IMDB/Box office mojo**](https://github.com/tjwaterman99/boxofficemojo-scraper) - Since a lot of box office data is missing we want to enrich our dataset by scraping the boxofficemojo website. In the linked we found the github repository of someone who already did it, showing a proof of concept.
 
 -[**Inflation (CPI)**](https://www.officialdata.org/us/inflation/1923?amount=1) - In order to ensure a fair comparison of revenue/box office data between different movies we need to adjust for inflation. Sicne the box office revenue is listed in USD, we use historical dat. By normalizing financial figures for inflation, we aim to assess the financial success of movies in real dollars, facilitating meaningful comparisons across different years.
 
 ## Methods
 ### Bechdel Test Feature Addition:
 The vanilla CMU dataset does not contain the Bechdel Test Score for the movies. However, using an additional dataset that accounts for this, we may add this feature as a new column to our dataset. The aforementioned dataset contains the Bechdel score, year, and movie name for more than 10,000 movies. In order to add this new column, we took the intersection of two datasets, by iteratively comparing the name of the movies. However, we observed that for the same movie, names on two datasets may not exactly match, due to some typos. For this, we have utilized some string-matching algorithms between datasets. We are running Fuzzy String-Matching algorithm on the two names and if they are above a certain threshold, we check the years on two datasets. If they match, that particular movie is added to the intersection dataset. Without the string-matching, we have 5553 movies on the intersection dataset, whereas, with the matching, we raise that number to 6521, which is favorable for us to have an intersection as big as possible.
+
+###
 
 
 
