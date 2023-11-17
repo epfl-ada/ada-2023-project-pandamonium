@@ -1,8 +1,21 @@
-# Scripted Sisterhood: Bechdel Test vs Female Cast Ratio
+# Scripted Sisterhood: An Analysis of Women's Representation in Movies Using Bechdel Test
 *Pandamonium: Tiago Freitas, Deniz Kasap, Riza Arseven, Eren Saydar and Matthijs Scheerder*
 
 ## Abstract
-The Bechdel test is gaining prominence in academic circles as a benchmark for evaluating the representation of women in films. The Bechdel Test, named after cartoonist Alison Bechdel, is a simple measure for evaluating gender representation in movies, requiring that a film must have at least two named women characters who engage in a conversation about something other than a man. If a movie passes these criteria, it is an indication of a minimal level of female presence and interaction in the narrative. Earlier research has delved into the correlation between passing the Bechdel test and its positive impact on box office performance in the United States (Valentowitsch, 2023). Recently, another metric has been introduced to measure female representation, the female cast ratio, which seems to be an even better indicator of female representation (Yang et al., 2020). It is interesting to research how this relates to the Bechdel test. In this project we try to find similarities between the two of them and compare them. Eventually we try to combine both metrics to find out if success can be predicted based on these metrics. 
+The Bechdel Test is a simple test to measure the prominence of women in movies. The test consists of three conditions to be satisfied:
+1. The cast of the movie contains two women characters,
+2. They talk to each other,
+3. About a topic besides man.
+   
+Recently, this test is gaining prominence in academic circles as a benchmark for evaluating the representation of women in films. Recently, another metric has been introduced to measure female representation, the female cast ratio (Yang et al., 2020). It is interesting to research how this relates to the Bechdel test. 
+
+<!-- I also like these titles:
+'Scripted Sisterhood: Bechdel Test vs Female Cast Ratio
+"Femme Frames Unveiled: A Bechdel Test vs. Female Cast Ratio Exploration
+Femme Metrics: A Comparative Analysis of Bechdel and Female Cast Ratio -->
+
+In "Scripted Sisterhood," we scrutinize the portrayal of women in film through the Bechdel Test. Our data-driven exploration investigates patterns and disparities in gender representation, sparking a conversation about storytelling's societal impact. Recent films like Oppenheimer and Avatar 2, failing the Bechdel Test, underscore its continued relevance. This project aims to unveil insights into cinematic narratives from the gender perspective.
+
 
 ## Research Questions
 1. Can we develop a formulation that accounts for the representation of women in movies?
@@ -14,14 +27,17 @@ The Bechdel test is gaining prominence in academic circles as a benchmark for ev
 -[**Bechdel Test**](https://bechdeltest.com/) - The Bechdel Test Movie List, comprising more than 10,130 movies, is retrieved through its API, offering a dataset with seven fields. Key features include imdbid (facilitating integration with other datasets), title, year, and rating. The rating scale delineates the Bechdel Test outcomes: 0 signifies the absence of two women, 1 indicates no conversation, 2 denotes discussion about a man, and 3 signifies a successful passage of the test. 
 
 
--[**Inflation (CPI)**](https://www.officialdata.org/us/inflation/1923?amount=1) - In order to ensure a fair comparison of revenue/box office data between different movies we need to adjust for inflation. Sicne the box office revenue is listed in USD, we use historical dat. By normalizing financial figures for inflation, we aim to assess the financial success of movies in real dollars, facilitating meaningful comparisons across different years.
+-[**Inflation (CPI)**](https://www.officialdata.org/us/inflation/1923?amount=1) - In order to ensure a fair comparison of revenue/box office data between different movies we need to adjust for inflation. Since the box office revenue is listed in USD, we use historical data. By normalizing financial figures for inflation, we aim to assess the financial success of movies in real dollars, facilitating meaningful comparisons across different years.
 
 ## Methods
 ### Bechdel Test Feature Addition:
 The vanilla CMU dataset does not contain the Bechdel Test Score for the movies. However, using an additional dataset that accounts for this, we may add this feature as a new column to our dataset. The aforementioned dataset contains the Bechdel score, year, and movie name for more than 10,000 movies. In order to add this new column, we took the intersection of two datasets, by iteratively comparing the name of the movies. However, we observed that for the same movie, names on two datasets may not exactly match, due to some typos. For this, we have utilized some string-matching algorithms between datasets. We are running Fuzzy String-Matching algorithm on the two names and if they are above a certain threshold, we check the years on two datasets. If they match, that particular movie is added to the intersection dataset. Without the string-matching, we have 5553 movies on the intersection dataset, whereas, with the matching, we raise that number to 6521, which is favorable for us to have an intersection as big as possible.
 
+## Data Analysis
+Utilizing the visualization tools we learned in the lecture, like line plots, bar plots, box plots, and histograms to do the first initial data analysis to extract some preliminary conclusions and get a visualization of the data to get the project rolling.
+
 ### Linear Regression: OLS
-We want to predict the movie success finding correlation between different variables, focusing on the women's participation metrics the Bechdel test and female cast ratio. Movie success can be defined broadly by either box office revenue, ratings, ROI, etc.
+We want to predict the movie success by finding a correlation between different variables, focusing on the women's participation metrics the Bechdel test, and female cast ratio. Movie success can be defined broadly by either box office revenue, ratings, ROI, etc.
 
 
 ## Proposed timeline
@@ -37,10 +53,10 @@ We have decided to have 2 internal deadlines for each week: Tuesday and Friday.
 - 1.12.23: **Homework 2 deadline**
 ---
 - 5.12.22: Linear Regression/advanced methods for prediction. Start advanced visualization.
-- 8.12.22: Finish visualizations and refinements. Review past work/progress, alter plan if necessary. 
+- 8.12.22: Finish visualizations and refinements. Review past work/progress, and alter the plan if necessary. 
 ---
 - 12.12.22: All technical parts finished, start with datastory (website development).
-- 15.12.22: Finish datastory
+- 15.12.22: Finish data story
 ---
 - 20.12.22: Check all deliverables and update README. Deliberately scheduled less to have some buffer time.
 - 22.12.22: **Project milestone 3 deadline** 
@@ -50,7 +66,7 @@ We have decided to have 2 internal deadlines for each week: Tuesday and Friday.
 ## Organisation within the team
 
 We try to work as one team on the weekly internal deadlines of the proposed timeline. Based on our planning the workload will be divided.
-Nonetheless, we assign some overall responsiblities of the project for each person, based on strenghts and interests. 
+Nonetheless, we assign some overall responsibilities of the project for each person, based on strengths and interests. 
 
 <table class="tg" style="undefined;table-layout: fixed; width: 342px">
 <colgroup>
