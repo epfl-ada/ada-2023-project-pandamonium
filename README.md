@@ -12,9 +12,12 @@ Questions for TAs (optional): Add here any questions you have for us related to 
 *Pandamonium: Tiago Freitas, Deniz Kasap, Riza Arseven, Eren Saydar and Matthijs Scheerder
 
 ## Abstract
-The Bechdel test is gaining prominence in academic circles as a benchmark for evaluating the representation of women in films. Earlier research has delved into the correlation between passing the Bechdel test and its positive impact on box office performance in the United States (Valentowitsch, 2023). Recently, another metric has been introduced to measure female representation, the female cast ratio (Yang et al, 2020). It is interesting to research how this relates to the Bechdel test. Th 
+The Bechdel test is gaining prominence in academic circles as a benchmark for evaluating the representation of women in films. Earlier research has delved into the correlation between passing the Bechdel test and its positive impact on box office performance in the United States (Valentowitsch, 2023). Recently, another metric has been introduced to measure female representation, the female cast ratio (Yang et al., 2020). It is interesting to research how this relates to the Bechdel test. 
 
-
+<!-- I also like these titles:
+'Scripted Sisterhood: Bechdel Test vs Female Cast Ratio
+"Femme Frames Unveiled: A Bechdel Test vs. Female Cast Ratio Exploration
+Femme Metrics: A Comparative Analysis of Bechdel and Female Cast Ratio -->
 
 
 
