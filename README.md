@@ -8,11 +8,16 @@ Proposed timeline
 Organization within the team: A list of internal milestones up until project Milestone P3.
 Questions for TAs (optional): Add here any questions you have for us related to the proposed project. -->
 
-# Scripted Sisterhood: Analyzing Bechdel Test Triumphs
+# Femme Frames: An Analysis of Women Representation in Movies using Bechdel Test
 *Pandamonium: Tiago Freitas, Deniz Kasap, Riza Arseven, Eren Saydar and Matthijs Scheerder
 
 ## Abstract
-The Bechdel test is gaining prominence in academic circles as a benchmark for evaluating the representation of women in films. Earlier research has delved into the correlation between passing the Bechdel test and its positive impact on box office performance in the United States (Valentowitsch, 2023). Recently, another metric has been introduced to measure female representation, the female cast ratio (Yang et al., 2020). It is interesting to research how this relates to the Bechdel test. 
+The Bechdel Test is a simple test to measure the prominence of women in movies. The test consists of three conditions to be satisfied:
+1. The cast of the movie contains two women characters,
+2. They talk to each other,
+3. About a topic besides man.
+   
+Recently, this test is gaining prominence in academic circles as a benchmark for evaluating the representation of women in films. Earlier research has delved into the correlation between passing the Bechdel test and its positive impact on box office performance in the United States (Valentowitsch, 2023). Recently, another metric has been introduced to measure female representation, the female cast ratio (Yang et al., 2020). It is interesting to research how this relates to the Bechdel test. 
 
 <!-- I also like these titles:
 'Scripted Sisterhood: Bechdel Test vs Female Cast Ratio
@@ -39,7 +44,7 @@ In "Femme Frames," we scrutinize the portrayal of women in film through the Bech
 ### Bechdel Test Feature Addition:
 The vanilla CMU dataset does not contain the Bechdel Test Score for the movies. However, using an additional dataset that accounts for this, we may add this feature as a new column to our dataset. The aforementioned dataset contains the Bechdel score, year, and movie name for more than 10,000 movies. In order to add this new column, we took the intersection of two datasets, by iteratively comparing the name of the movies. However, we observed that for the same movie, names on two datasets may not exactly match, due to some typos. For this, we have utilized some string-matching algorithms between datasets. We are running Fuzzy String-Matching algorithm on the two names and if they are above a certain threshold, we check the years on two datasets. If they match, that particular movie is added to the intersection dataset. Without the string-matching, we have 5553 movies on the intersection dataset, whereas, with the matching, we raise that number to 6521, which is favorable for us to have an intersection as big as possible.
 
-###
+### Analysis on Both CMU and Bechdel Intersection Dataset
 
 
 
