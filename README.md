@@ -30,10 +30,10 @@ In "Scripted Sisterhood," we scrutinize the portrayal of women in film through t
 -[**Inflation (CPI)**](https://www.officialdata.org/us/inflation/1923?amount=1) - In order to ensure a fair comparison of revenue/box office data between different movies we need to adjust for inflation. Since the box office revenue is listed in USD, we use historical data. By normalizing financial figures for inflation, we aim to assess the financial success of movies in real dollars, facilitating meaningful comparisons across different years.
 
 ## Methods
-### Bechdel Test Feature Addition:
+### Bechdel Test Feature Addition ([bechdel_intersection.ipynb](bechdel_intersection.ipynb)):
 The vanilla CMU dataset does not contain the Bechdel Test Score for the movies. However, using an additional dataset that accounts for this, we may add this feature as a new column to our dataset. The aforementioned dataset contains the Bechdel score, year, and movie name for more than 10,000 movies. In order to add this new column, we took the intersection of two datasets, by iteratively comparing the name of the movies. However, we observed that for the same movie, names on two datasets may not exactly match, due to some typos. For this, we have utilized some string-matching algorithms between datasets. We are running Fuzzy String-Matching algorithm on the two names and if they are above a certain threshold, we check the years on two datasets. If they match, that particular movie is added to the intersection dataset. Without the string-matching, we have 5553 movies on the intersection dataset, whereas, with the matching, we raise that number to 6521, which is favorable for us to have an intersection as big as possible.
 
-### Data Analysis
+### Data Analysis ([Milestone_P2.ipynb](Milestone_P2.ipynb))
 Utilizing the visualization tools we learned in the lecture, like line plots, bar plots, box plots, and histograms to do the first initial data analysis to extract some preliminary conclusions and get a visualization of the data to get the project rolling, we carried out the initial analysis. These analysis are done twice, both for the original CMU dataset and the Bechdel intersection dataset to get an idea about our dataset and distribution of the features.
 
 ### Linear Regression: OLS
