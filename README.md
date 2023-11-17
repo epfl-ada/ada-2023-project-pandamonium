@@ -12,8 +12,7 @@ Questions for TAs (optional): Add here any questions you have for us related to 
 *Pandamonium: Tiago Freitas, Deniz Kasap, Riza Arseven, Eren Saydar and Matthijs Scheerder
 
 ## Abstract
-Women have been historically underrepresnted in many areas of public life, cinema among one of the most noticable.  
-
+Women have been historically underrepresented in cinema, one of the most used measures to indicate the represe
 
 
 
@@ -30,31 +29,43 @@ In "Femme Frames," we scrutinize the portrayal of women in film through the Bech
 
 ## Research Questions
 
-* Research Question 1: Are there hidden relationships for the prediction of the Bechdel test?
-* Research Question 2: Are there hidden relationships for the prediction of the Bechdel test?
-* Research Question 3: Can we introduce another metric of representation of women in cinema, like the female cast ratio?
+1. Are there hidden relationships for the prediction of the Bechdel test?
+2. Are there hidden relationships for the prediction of the Bechdel test?
+3. Can we introduce another metric of representation of women in cinema, like the female cast ratio?
+4. 
 
 
 
 ## Proposed additional datasets
+-[**Bechdel Test**](https://bechdeltest.com/) - The Bechdel Test Movie List, comprising more than 10,130 movies, is retrieved through its API, offering a dataset with seven fields. Key features include imdbid (facilitating integration with other datasets), title, year, and rating. The rating scale delineates the Bechdel Test outcomes: 0 signifies the absence of two women, 1 indicates no conversation, 2 denotes discussion about a man, and 3 signifies a successful passage of the test. 
+
+-[**Inflation (CPI)**](https://www.officialdata.org/us/inflation/1923?amount=1) - In order to ensure a fair comparison of revenue/box office data between different movies we need to adjust for inflation. For this reason we used historical data of the Consumer Price Index (CPI) of the United States. Because 
+
+
+
+
+
+a dataset containing country names and inflation data will be used to adjust `budget` and `box office revenue` of the movies. We use the Consumer Price Index (CPI) of the United States to adjust for inflation. CPI is the most widely used measure of inflation, and we use the U.S. as a baseline because both budget and box office revenue are stated in USD. By adjusting for inflation, we can measure financial success in constant dollars, which allows us to compare movies from different years.
+
 
 
 
 
 ## Methods
+What do we want to do?
 
 
 
 
 
 
-### Proposed timeline
 
-We have decided to have 2 internal deadlines for each week: Tuesday and Friday.
+
+## Proposed timeline
+
+We have decided to have 2 internal deadlines for each week: Tuesday and Friday.  
 
 - 17.11.23: **Project milestone 2 deadline**
-- Our timeline consists of internal milestones on every Tuesday and Friday until the project deadline.
-
 ---
 - 21.11.23: Review previous work, carry on with statistical analysis.
 - 24.11.23: Finish naive analysis. 
@@ -65,10 +76,10 @@ We have decided to have 2 internal deadlines for each week: Tuesday and Friday.
 - 5.12.22: Finish statistical analysis when controlling for all confounding factors.
 - 8.12.22: Visualizations and refinements.
 ---
-- 12.12.22: Construct a rought draft of the data story.
-- 15.12.22: Work on data story.
+- 12.12.22: All technical parts finished, start with datastory.
+- 15.12.22: Finish datastory
 ---
-- 20.12.22: Complete the data story, add all necessary information to the final notebook and update README.
+- 20.12.22: Check all deliverables and update README. Deliberately scheduled less to have some buffer time.
 - 22.12.22: **Project milestone 3 deadline** 
 
 
@@ -89,19 +100,19 @@ We have decided to have 2 internal deadlines for each week: Tuesday and Friday.
 <tbody>
   <tr>
     <td class="tg-0lax">Tiago</td>
-    <td class="tg-0lax">task1 <br><br>task2<br><br>task3</td>
+    <td class="tg-0lax">Initial data analysis<br><br>task2<br><br>task3</td>
   </tr>
   <tr>
     <td class="tg-0lax">Deniz</td>
-    <td class="tg-0lax">task1<br><br>task2<br><br>task3</td>
+    <td class="tg-0lax">Additional Dataset<br><br>task2<br><br>task3</td>
   </tr>
   <tr>
     <td class="tg-0lax">Eren</td>
-    <td class="tg-0lax">task1<br><br>task2<br><br>task3</td>
+    <td class="tg-0lax">website development<br><br>Develop textual context for data story<br><br>task3</td>
   </tr>
   <tr>
     <td class="tg-0lax">Riza</td>
-    <td class="tg-0lax">task1<br><br>task2<br><br>task3</td>
+    <td class="tg-0lax">Initial data analysis<br><br>task2<br><br>task3</td>
   </tr>
   <tr>
     <td class="tg-0lax">Matthijs</td>
