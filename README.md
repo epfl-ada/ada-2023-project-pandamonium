@@ -8,13 +8,11 @@ Proposed timeline
 Organization within the team: A list of internal milestones up until project Milestone P3.
 Questions for TAs (optional): Add here any questions you have for us related to the proposed project.
 
-
 # Scripted Sisterhood: Analyzing Bechdel Test Triumphs
 *Pandamonium: Tiago Freitas, Deniz Kasap, Riza Arseven, Eren Saydar and Matthijs Scheerder
 
-
 ## Abstract
-
+Women have been historically underrepresnted in many areas of public life, cinema among one of the most noticable.  
 
 
 
@@ -33,16 +31,17 @@ In "Femme Frames," we scrutinize the portrayal of women in film through the Bech
 ## Research Questions
 
 * Research Question 1: Are there hidden relationships for the prediction of the Bechdel test?
-* Research Question 2: Can we introduce another metric of representation of women in cinema, like the female cast ratio?
+* Research Question 2: Are there hidden relationships for the prediction of the Bechdel test?
+* Research Question 3: Can we introduce another metric of representation of women in cinema, like the female cast ratio?
+
+
+
+## Proposed additional datasets
 
 
 
 
-
-
-
-
-
+## Methods
 
 
 
@@ -51,22 +50,65 @@ In "Femme Frames," we scrutinize the portrayal of women in film through the Bech
 
 ### Proposed timeline
 
-Step 1 to 5: **Deadline Milestone 2 18.11.2022**
+We have decided to have 2 internal deadlines for each week: Tuesday and Friday.
 
-*01.12.2023: Deadline Homework 2*
+- 17.11.23: **Project milestone 2 deadline**
+- Our timeline consists of internal milestones on every Tuesday and Friday until the project deadline.
 
-Step 6: 09.12.2022
+---
+- 21.11.23: Review previous work, carry on with statistical analysis.
+- 24.11.23: Finish naive analysis. 
+---
+- 28.11.23: Each member works on homework 2
+- 1.12.23: **Homework 2 deadline**
+---
+- 5.12.22: Finish statistical analysis when controlling for all confounding factors.
+- 8.12.22: Visualizations and refinements.
+---
+- 12.12.22: Construct a rought draft of the data story.
+- 15.12.22: Work on data story.
+---
+- 20.12.22: Complete the data story, add all necessary information to the final notebook and update README.
+- 22.12.22: **Project milestone 3 deadline** 
 
-Step 7: 14.12.2022
-
-Step 8: 16.12.2022
-
-Step 9: **Deadline Milestone 3 22.12.2022**
 
 
 ## Organisation within the team
 
-
+<table class="tg" style="undefined;table-layout: fixed; width: 342px">
+<colgroup>
+<col style="width: 164px">
+<col style="width: 178px">
+</colgroup>
+<thead>
+  <tr>
+    <th class="tg-0lax"></th>
+    <th class="tg-0lax">Tasks</th>
+  </tr>
+</thead>
+<tbody>
+  <tr>
+    <td class="tg-0lax">Tiago</td>
+    <td class="tg-0lax">task1 <br><br>task2<br><br>task3</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Deniz</td>
+    <td class="tg-0lax">task1<br><br>task2<br><br>task3</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Eren</td>
+    <td class="tg-0lax">task1<br><br>task2<br><br>task3</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Riza</td>
+    <td class="tg-0lax">task1<br><br>task2<br><br>task3</td>
+  </tr>
+  <tr>
+    <td class="tg-0lax">Matthijs</td>
+    <td class="tg-0lax">task1<br><br>task2<br><br>task3</td>
+    </tr>
+</tbody>
+</table>
 
 
 
