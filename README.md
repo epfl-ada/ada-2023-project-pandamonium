@@ -17,14 +17,14 @@ The Bechdel Test is a simple test to measure the prominence of women in movies. 
 2. They talk to each other,
 3. About a topic besides man.
    
-Recently, this test is gaining prominence in academic circles as a benchmark for evaluating the representation of women in films. Earlier research has delved into the correlation between passing the Bechdel test and its positive impact on box office performance in the United States (Valentowitsch, 2023). Recently, another metric has been introduced to measure female representation, the female cast ratio (Yang et al., 2020). It is interesting to research how this relates to the Bechdel test. 
+Recently, this test is gaining prominence in academic circles as a benchmark for evaluating the representation of women in films. Recently, another metric has been introduced to measure female representation, the female cast ratio (Yang et al., 2020). It is interesting to research how this relates to the Bechdel test. 
 
 <!-- I also like these titles:
 'Scripted Sisterhood: Bechdel Test vs Female Cast Ratio
 "Femme Frames Unveiled: A Bechdel Test vs. Female Cast Ratio Exploration
 Femme Metrics: A Comparative Analysis of Bechdel and Female Cast Ratio -->
 
-In "Femme Frames," we scrutinize the portrayal of women in film through the Bechdel Test—requiring at least two women to converse about something other than a man. Our data-driven exploration investigates patterns and disparities in gender representation, sparking a conversation about storytelling's societal impact. Recent films like Oppenheimer and Avatar 2, failing the Bechdel Test, underscore its continued relevance. This project aims to unveil insights into cinematic narratives and promote positive change within the industry. Join us on a journey where every frame counts and every story told contributes to a more inclusive cinematic landscape.
+In "Femme Frames," we scrutinize the portrayal of women in film through the Bechdel Test. Our data-driven exploration investigates patterns and disparities in gender representation, sparking a conversation about storytelling's societal impact. Recent films like Oppenheimer and Avatar 2, failing the Bechdel Test, underscore its continued relevance. This project aims to unveil insights into cinematic narratives from the gender perspective.
 
 
 
