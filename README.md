@@ -33,8 +33,8 @@ In "Scripted Sisterhood," we scrutinize the portrayal of women in film through t
 ### Bechdel Test Feature Addition:
 The vanilla CMU dataset does not contain the Bechdel Test Score for the movies. However, using an additional dataset that accounts for this, we may add this feature as a new column to our dataset. The aforementioned dataset contains the Bechdel score, year, and movie name for more than 10,000 movies. In order to add this new column, we took the intersection of two datasets, by iteratively comparing the name of the movies. However, we observed that for the same movie, names on two datasets may not exactly match, due to some typos. For this, we have utilized some string-matching algorithms between datasets. We are running Fuzzy String-Matching algorithm on the two names and if they are above a certain threshold, we check the years on two datasets. If they match, that particular movie is added to the intersection dataset. Without the string-matching, we have 5553 movies on the intersection dataset, whereas, with the matching, we raise that number to 6521, which is favorable for us to have an intersection as big as possible.
 
-## Data Analysis
-Utilizing the visualization tools we learned in the lecture, like line plots, bar plots, box plots, and histograms to do the first initial data analysis to extract some preliminary conclusions and get a visualization of the data to get the project rolling.
+### Data Analysis
+Utilizing the visualization tools we learned in the lecture, like line plots, bar plots, box plots, and histograms to do the first initial data analysis to extract some preliminary conclusions and get a visualization of the data to get the project rolling, we carried out the initial analysis. These analysis are done twice, both for the original CMU dataset and the Bechdel intersection dataset to get an idea about our dataset and distribution of the features.
 
 ### Linear Regression: OLS
 We want to predict the movie success by finding a correlation between different variables, focusing on the women's participation metrics the Bechdel test, and female cast ratio. Movie success can be defined broadly by either box office revenue, ratings, ROI, etc.
@@ -46,20 +46,20 @@ We have decided to have 2 internal deadlines for each week: Tuesday and Friday.
 
 - 17.11.23: **Project milestone 2 deadline**
 ---
-- 21.11.23: Start with more in-depth statistical analysis. Review past work/progress, 
+- 21.11.23: Start with more in-depth statistical analysis. Review past work/progress.
 - 24.11.23: Finish statistical analysis
 ---
 - 28.11.23: Each member works on homework 2
-- 1.12.23: **Homework 2 deadline**
+- 01.12.23: **Homework 2 deadline**
 ---
-- 5.12.22: Linear Regression/advanced methods for prediction. Start advanced visualization.
-- 8.12.22: Finish visualizations and refinements. Review past work/progress, and alter the plan if necessary. 
+- 05.12.23: Linear Regression/advanced methods for prediction. Start advanced visualization.
+- 08.12.23: Finish visualizations and refinements. Review past work/progress, and alter the plan if necessary. 
 ---
-- 12.12.22: All technical parts finished, start with datastory (website development).
-- 15.12.22: Finish data story
+- 12.12.23: All technical parts finished, start with datastory (website development).
+- 15.12.23: Finish data story
 ---
-- 20.12.22: Check all deliverables and update README. Deliberately scheduled less to have some buffer time.
-- 22.12.22: **Project milestone 3 deadline** 
+- 20.12.23: Check all deliverables and update README. Deliberately scheduled less to have some buffer time.
+- 22.12.23: **Project milestone 3 deadline** 
 
 
 
@@ -104,8 +104,6 @@ Nonetheless, we assign some overall responsibilities of the project for each per
 </table>
 
 ## Sources
-Valentowitsch, J. Hollywood caught in two worlds? The impact of the Bechdel test on the international box office performance of cinematic films. Mark Lett 34, 293–308 (2023). https://doi.org/10.1007/s11002-022-09652-5
-
 Luoying Yang, Zhou Xu, and Jiebo Luo. 2020. Measuring Female Representation and Impact in Films over Time. ACM/IMS Trans. Data Sci. 1, 4, Article 30 (November 2020), 14 pages. https://doi.org/10.1145/3411213
 
 
