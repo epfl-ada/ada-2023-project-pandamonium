@@ -1,4 +1,4 @@
-Readme.md file containing the detailed project proposal (up to 1000 words). Your README.md should contain:
+<!-- Readme.md file containing the detailed project proposal (up to 1000 words). Your README.md should contain:
 Title
 Abstract: A 150 word description of the project idea and goals. What’s the motivation behind your project? What story would you like to tell, and why?
 Research Questions: A list of research questions you would like to address during the project.
@@ -6,13 +6,13 @@ Proposed additional datasets (if any): List the additional dataset(s) you want t
 Methods
 Proposed timeline
 Organization within the team: A list of internal milestones up until project Milestone P3.
-Questions for TAs (optional): Add here any questions you have for us related to the proposed project.
+Questions for TAs (optional): Add here any questions you have for us related to the proposed project. -->
 
 # Scripted Sisterhood: Analyzing Bechdel Test Triumphs
 *Pandamonium: Tiago Freitas, Deniz Kasap, Riza Arseven, Eren Saydar and Matthijs Scheerder
 
 ## Abstract
-Women have been historically underrepresented in cinema, one of the most used measures to indicate the represe
+The Bechdel test is gaining prominence in academic circles as a benchmark for evaluating the representation of women in films. Earlier research has delved into the correlation between passing the Bechdel test and its positive impact on box office performance in the United States (Valentowitsch, 2023). Recently, another metric has been introduced to measure female representation, the female cast ratio (Yang et al, 2020). It is interesting to research how this relates to the Bechdel test. Th 
 
 
 
@@ -28,36 +28,17 @@ In "Femme Frames," we scrutinize the portrayal of women in film through the Bech
 
 
 ## Research Questions
-
 1. Is there a historical trend in the Bechdel test, i.e. are things improving or remaining as they have always been?
-2. Are there hidden relationships for the prediction of the Bechdel test, can we come up with some formula?
-3. Can we introduce another metric of representation of women in cinema, like the female cast ratio?
-4. Can we extend the formula or use the Bechdel to predict box office revenue? 
-
+2. Are there hidden relationships for the prediction of the Bechdel test, can we come up with some formula, predicting movie's success based on the Bechdel value?
+3. Can we introduce another metric of representation of women in cinema, like the female cast ratio, and how does it compare to the Bechdel test?
 
 
 ## Proposed additional datasets
 -[**Bechdel Test**](https://bechdeltest.com/) - The Bechdel Test Movie List, comprising more than 10,130 movies, is retrieved through its API, offering a dataset with seven fields. Key features include imdbid (facilitating integration with other datasets), title, year, and rating. The rating scale delineates the Bechdel Test outcomes: 0 signifies the absence of two women, 1 indicates no conversation, 2 denotes discussion about a man, and 3 signifies a successful passage of the test. 
 
-
--[**IMDB Box office mojo**](https://github.com/tjwaterman99/boxofficemojo-scraper) - Since a lot of box office data is missing we want to enrich our dataset by scraping the boxofficemojo website. In the linked 
-
-
-
-
-
+-[**IMDB/Box office mojo**](https://github.com/tjwaterman99/boxofficemojo-scraper) - Since a lot of box office data is missing we want to enrich our dataset by scraping the boxofficemojo website. In the linked we found the github repository of someone who already did it, showing a proof of concept.
 
 -[**Inflation (CPI)**](https://www.officialdata.org/us/inflation/1923?amount=1) - In order to ensure a fair comparison of revenue/box office data between different movies we need to adjust for inflation. Sicne the box office revenue is listed in USD, we use historical dat. By normalizing financial figures for inflation, we aim to assess the financial success of movies in real dollars, facilitating meaningful comparisons across different years.
-
-
-
-
-
-a dataset containing country names and inflation data will be used to adjust `budget` and `box office revenue` of the movies. We use the Consumer Price Index (CPI) of the United States to adjust for inflation. CPI is the most widely used measure of inflation, and we use the U.S. as a baseline because both budget and box office revenue are stated in USD. By adjusting for inflation, we can measure financial success in constant dollars, which allows us to compare movies from different years.
-
-
-
-
 
 ## Methods
 What do we want to do?
@@ -129,9 +110,9 @@ We have decided to have 2 internal deadlines for each week: Tuesday and Friday.
 </tbody>
 </table>
 
+## Sources
+Valentowitsch, J. Hollywood caught in two worlds? The impact of the Bechdel test on the international box office performance of cinematic films. Mark Lett 34, 293–308 (2023). https://doi.org/10.1007/s11002-022-09652-5
 
-
-
-
+Luoying Yang, Zhou Xu, and Jiebo Luo. 2020. Measuring Female Representation and Impact in Films over Time. ACM/IMS Trans. Data Sci. 1, 4, Article 30 (November 2020), 14 pages. https://doi.org/10.1145/3411213
 
 
