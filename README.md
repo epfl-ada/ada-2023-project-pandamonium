@@ -29,17 +29,25 @@ In "Femme Frames," we scrutinize the portrayal of women in film through the Bech
 
 ## Research Questions
 
-1. Are there hidden relationships for the prediction of the Bechdel test?
-2. Are there hidden relationships for the prediction of the Bechdel test?
+1. Is there a historical trend in the Bechdel test, i.e. are things improving or remaining as they have always been?
+2. Are there hidden relationships for the prediction of the Bechdel test, can we come up with some formula?
 3. Can we introduce another metric of representation of women in cinema, like the female cast ratio?
-4. 
+4. Can we extend the formula or use the Bechdel to predict box office revenue? 
 
 
 
 ## Proposed additional datasets
 -[**Bechdel Test**](https://bechdeltest.com/) - The Bechdel Test Movie List, comprising more than 10,130 movies, is retrieved through its API, offering a dataset with seven fields. Key features include imdbid (facilitating integration with other datasets), title, year, and rating. The rating scale delineates the Bechdel Test outcomes: 0 signifies the absence of two women, 1 indicates no conversation, 2 denotes discussion about a man, and 3 signifies a successful passage of the test. 
 
--[**Inflation (CPI)**](https://www.officialdata.org/us/inflation/1923?amount=1) - In order to ensure a fair comparison of revenue/box office data between different movies we need to adjust for inflation. For this reason we used historical data of the Consumer Price Index (CPI) of the United States. Because 
+
+-[**IMDB Box office mojo**](https://github.com/tjwaterman99/boxofficemojo-scraper) - Since a lot of box office data is missing we want to enrich our dataset by scraping the boxofficemojo website. In the linked 
+
+
+
+
+
+
+-[**Inflation (CPI)**](https://www.officialdata.org/us/inflation/1923?amount=1) - In order to ensure a fair comparison of revenue/box office data between different movies we need to adjust for inflation. Sicne the box office revenue is listed in USD, we use historical dat. By normalizing financial figures for inflation, we aim to assess the financial success of movies in real dollars, facilitating meaningful comparisons across different years.
 
 
 
@@ -67,8 +75,8 @@ We have decided to have 2 internal deadlines for each week: Tuesday and Friday.
 
 - 17.11.23: **Project milestone 2 deadline**
 ---
-- 21.11.23: Review previous work, carry on with statistical analysis.
-- 24.11.23: Finish naive analysis. 
+- 21.11.23: Start with more in-depth statistical analysis. 
+- 24.11.23: Finish statistical analysis
 ---
 - 28.11.23: Each member works on homework 2
 - 1.12.23: **Homework 2 deadline**
@@ -76,7 +84,7 @@ We have decided to have 2 internal deadlines for each week: Tuesday and Friday.
 - 5.12.22: Finish statistical analysis when controlling for all confounding factors.
 - 8.12.22: Visualizations and refinements.
 ---
-- 12.12.22: All technical parts finished, start with datastory.
+- 12.12.22: All technical parts finished, start with datastory (website development).
 - 15.12.22: Finish datastory
 ---
 - 20.12.22: Check all deliverables and update README. Deliberately scheduled less to have some buffer time.
