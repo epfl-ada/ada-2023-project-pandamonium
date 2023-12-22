@@ -65,7 +65,7 @@ The process involves categorizing the sentiment of each summary into three moods
 
 This approach not only simplifies sentiment analysis but also provides valuable insights into the emotional content of movie narratives, enhancing our understanding of their impact and tone.
 
-###### Polarity
+##### Polarity (TextBlob)
 In our approach, we aimed to calculate a polarity score for each movie's plot summary, starting with a baseline using the [TextBlob library](https://textblob.readthedocs.io/en/dev/quickstart.html). 
 
 ### Linear Regression: OLS
