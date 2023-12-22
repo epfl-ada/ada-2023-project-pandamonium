@@ -27,7 +27,7 @@ In "Scripted Sisterhood," we scrutinize the portrayal of women in film through t
 3. Is it possible to see a discrepancy comparing the women's representation score and the Bechdel test?
 4. Can we combine the Bechdel test and the women's representation score in one unified predictor for movie success?
 
-## Proposed Additional Datasets
+## Additional Datasets
 -[**Bechdel Test**](https://bechdeltest.com/) - The Bechdel Test Movie List, comprising more than 10,130 movies, is retrieved through its API, offering a dataset with seven fields. Key features include imdbid (facilitating integration with other datasets), title, year, and rating. The rating scale delineates the Bechdel Test outcomes: 0 signifies the absence of two women, 1 indicates no conversation, 2 denotes discussion about a man, and 3 signifies a successful passage of the test. 
 
 -[**GII**](https://ourworldindata.org/grapher/gender-inequality-index-from-the-human-development-report?tab=chart) - The Gender Inequality Index can be readily downloaded and is used to enhance our dataset. .This index provides a comprehensive (quantitative) view of the challenges women face in different countries, highlighting areas where progress is needed to achieve greater gender equality. The lower the value the higher the equality between genders.
@@ -40,14 +40,23 @@ In "Scripted Sisterhood," we scrutinize the portrayal of women in film through t
 The vanilla CMU dataset does not contain the Bechdel Test Score for the movies. However, using an additional dataset that accounts for this, we may add this feature as a new column to our dataset. The aforementioned dataset contains the Bechdel score, year, and movie name for more than 10,000 movies. In order to add this new column, we took the intersection of two datasets, by iteratively comparing the name of the movies. However, we observed that for the same movie, names on two datasets may not exactly match, due to some typos. For this, we have utilized some string-matching algorithms between datasets. We are running Fuzzy String-Matching algorithm on the two names and if they are above a certain threshold, we check the years on two datasets. If they match, that particular movie is added to the intersection dataset. Without the string-matching, we have 5553 movies on the intersection dataset, whereas, with the matching, we raise that number to 6521. It is favorable for us start with a dataset as large as possible.
 
 ### Natural Language Processing
-#### Gender density
+#### Actor density
+For the gender density we used the simple yet intuitive formula: 
 
+$$\frac{number_{female\_characters}}{number_{female\_characters} + number_{male\_characters}}$$
 
+To calculate the actor mention score for movies, we devised a method that begins with analyzing the plot summary of each film. This involves tokenizing the summary into words and tracking the frequency of each. The focus here is to identify how often characters are mentioned in the narrative.
 
+The next step is aligning this data with a character dataset, which contains detailed information about each character, including their gender. We refined this list by converting character names to lowercase and extracting only their first names, ensuring accuracy in matching character mentions in the plot summary.
 
-#### Actor mentioning
+Finally, we correlate the frequency of character mentions with their gender to calculate the actor mention score. This score is derived by comparing the number of mentions of male and female characters, providing a quantitative measure of gender representation in the movie's narrative. This approach not only quantifies gender portrayal but also emphasizes the significance of character prominence in the storytelling process.
 
+#### Pronoun density
+The pronoun density is somewhat similar to the actor density, but it is more straightforward and thus considerably more simple: 
 
+$$density_{pronoun} = \frac{number_{she,her}}{number_{she,her} + number_{he,his}}$$
+
+This formula calculates the proportion of female pronouns relative to the total count of both male and female pronouns, providing a simple yet effective measure of gender representation. Unlike our previous method that analyzed actor mentions, this approach focuses solely on the usage of gender-specific pronouns in the plot summaries, offering a different perspective on the narrative's gender dynamics.
 
 #### Sentiment analysis
 
