@@ -2,7 +2,7 @@
 *Pandamonium: Tiago Freitas, Deniz Kasap, Riza Arseven, Eren Saydar and Matthijs Scheerder*
 
 ## Datastory
-[Datastory](https://matthijsscheerder.github.io/PandamoniumWebsite/)
+Gender equality is a pressing issue in today's world, and for good reason. Consequently, we are dedicated to exploring women's representation in the world of cinema. Join us in our quest to find out how well represented women really are and see how we try redefine the metrics for women's representation in our [Datastory](https://matthijsscheerder.github.io/PandamoniumWebsite/)!
 
 ## Abstract
 The Bechdel Test is a simple test to measure the prominence of women in movies. The test consists of three conditions to be satisfied:
