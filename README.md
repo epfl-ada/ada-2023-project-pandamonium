@@ -29,10 +29,10 @@ In "Scripted Sisterhood," we scrutinize the portrayal of women in film through t
 
 ## Additional Datasets
 -[**Bechdel Test**](https://bechdeltest.com/) - The Bechdel Test Movie List, comprising more than 10,130 movies, is retrieved through its API, offering a dataset with seven fields. Key features include imdbid (facilitating integration with other datasets), title, year, and rating. The rating scale delineates the Bechdel Test outcomes: 0 signifies the absence of two women, 1 indicates no conversation, 2 denotes discussion about a man, and 3 signifies a successful passage of the test. 
-
+<!--
 -[**GII**](https://ourworldindata.org/grapher/gender-inequality-index-from-the-human-development-report?tab=chart) - The Gender Inequality Index can be readily downloaded and is used to enhance our dataset. .This index provides a comprehensive (quantitative) view of the challenges women face in different countries, highlighting areas where progress is needed to achieve greater gender equality. The lower the value the higher the equality between genders.
 
--[**HDI**](https://ourworldindata.org/grapher/human-development-index) - The Human Development Index can be readily downloaded and is used to enhance our dataset. This index offers valuable insights into a country's progress in improving the living standards and quality of life for its citizens. We want to see if this is also a predictor for women's represenation in cinema.
+-[**HDI**](https://ourworldindata.org/grapher/human-development-index) - The Human Development Index can be readily downloaded and is used to enhance our dataset. This index offers valuable insights into a country's progress in improving the living standards and quality of life for its citizens. We want to see if this is also a predictor for women's represenation in cinema.-->
 
 ## Methods
 ### Bechdel Test Feature Addition:
