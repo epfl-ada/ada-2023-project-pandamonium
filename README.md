@@ -59,9 +59,15 @@ $$density_{pronoun} = \frac{number_{she,her}}{number_{she,her} + number_{he,his}
 This formula calculates the proportion of female pronouns relative to the total count of both male and female pronouns, providing a simple yet effective measure of gender representation. Unlike our previous method that analyzed actor mentions, this approach focuses solely on the usage of gender-specific pronouns in the plot summaries, offering a different perspective on the narrative's gender dynamics.
 
 #### Sentiment analysis
+##### roBERTa
+We conducted sentiment analysis on movie plot summaries using the [roBERTa model](https://huggingface.co/docs/transformers/model_doc/roberta). This method bypasses the need for extensive text preprocessing, allowing us to directly analyze the tokenized summaries.
 
+The process involves categorizing the sentiment of each summary into three moods: negative, neutral, and positive. The model calculates the probabilities for each mood, offering a clear depiction of the emotional tone of the text.
 
+This approach not only simplifies sentiment analysis but also provides valuable insights into the emotional content of movie narratives, enhancing our understanding of their impact and tone.
 
+###### TextBlob - polarity
+In our approach, we aimed to calculate a polarity score for each movie's plot summary, starting with a baseline using the [TextBlob library](https://textblob.readthedocs.io/en/dev/quickstart.html). 
 
 
 
