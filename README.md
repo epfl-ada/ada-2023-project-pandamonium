@@ -4,28 +4,27 @@
 ## Datastory
 Gender equality is a pressing issue in today's world, and for good reason. Consequently, we are dedicated to exploring women's representation in the world of cinema. Join us in our quest to find out how well represented women really are and see how we try redefine the metrics for women's representation in our [Datastory](https://matthijsscheerder.github.io/PandamoniumWebsite/)!
 
-## Abstract I write this last
+## Abstract
 
 The Bechdel Test is a simple test to measure the prominence of women in movies. The test consists of three conditions to be satisfied:
 1. The cast of the movie contains two women characters,
 2. They talk to each other,
 3. About a topic besides man.
    
-Recently, this test is gaining prominence in academic circles as a benchmark for evaluating the representation of women in films. Recently, another metric has been introduced to measure female representation, the female cast ratio (Yang et al., 2020). It is interesting to research how this relates to the Bechdel test. 
+<!-- Recently, this test is gaining prominence in academic circles as a benchmark for evaluating the representation of women in films. Recently, another metric has been introduced to measure female representation, the female cast ratio (Yang et al., 2020). It is interesting to research how this relates to the Bechdel test. 
 
-<!-- I also like these titles:
+ I also like these titles:
 'Scripted Sisterhood: Bechdel Test vs Female Cast Ratio
 "Femme Frames Unveiled: A Bechdel Test vs. Female Cast Ratio Exploration
-Femme Metrics: A Comparative Analysis of Bechdel and Female Cast Ratio -->
+Femme Metrics: A Comparative Analysis of Bechdel and Female Cast Ratio
 
-In "Scripted Sisterhood," we scrutinize the portrayal of women in film through the Bechdel Test. Our data-driven exploration investigates patterns and disparities in gender representation, sparking a conversation about storytelling's societal impact. Recent films like Oppenheimer and Avatar 2, failing the Bechdel Test, underscore its continued relevance. This project aims to unveil insights into cinematic narratives from the gender perspective.
-
+In "Scripted Sisterhood," we scrutinize the portrayal of women in film through the Bechdel Test. Our data-driven exploration investigates patterns and disparities in gender representation, sparking a conversation about storytelling's societal impact. Recent films like Oppenheimer and Avatar 2, failing the Bechdel Test, underscore its continued relevance. This project aims to unveil insights into cinematic narratives from the gender perspective.-->
 
 ## Research Questions
-1. Can we develop a formulation that accounts for the representation of women in movies?
-2. Introducing the Bechdel test, how are these scores and trends changed along with the other attributes?
+1. 
+2. 
 3. Is it possible to see a discrepancy comparing the women's representation score and the Bechdel test?
-4. Can we combine the Bechdel test and the women's representation score in one unified predictor for movie success?
+4. Can we utilise machine learning models to predict the bechdel score?
 
 ## Additional Datasets
 -[**Bechdel Test**](https://bechdeltest.com/) - The Bechdel Test Movie List, comprising more than 10,130 movies, is retrieved through its API, offering a dataset with seven fields. Key features include imdbid (facilitating integration with other datasets), title, year, and rating. The rating scale delineates the Bechdel Test outcomes: 0 signifies the absence of two women, 1 indicates no conversation, 2 denotes discussion about a man, and 3 signifies a successful passage of the test. 
@@ -68,8 +67,10 @@ This approach not only simplifies sentiment analysis but also provides valuable 
 ##### Polarity (TextBlob)
 In our approach, we aimed to calculate a polarity score for each movie's plot summary, starting with a baseline using the [TextBlob library](https://textblob.readthedocs.io/en/dev/quickstart.html). 
 
-### Linear Regression: OLS
-During the project, we employed linear regression to identify correlations deserving further investigation and exploration.
+### Random Forests 
+We wanted to include a machine learning method to try if we can actually predict the outcome of the bechdel test using some of our newly introduced metrics. Random Forest is a robust machine learning algorithm, known for its versatility and simplicity in handling both classification and regression tasks. It operates as an ensemble of decision trees, each constructed using a random subset of the data, which then vote collectively on the final prediction. 
+
+In the context of predicting Bechdel scores, Random Forest is ideal due to its capacity for threshold-based classification, which aligns well with features like female cast ratio. The algorithm's inherent feature ranking provides an efficient method for feature selection, highlighting the most influential factors such as female cast ratio and gender pronoun density in determining a film's Bechdel status. 
 
 ## Executed timeline
 Due to receiving a low grade on our Milestone 2, it was necessary to revisit and revise our project. Consequently, our project timeline has also undergone significant changes. Since we got the feedback late we also had to radically alter our planning.  
@@ -81,9 +82,9 @@ Due to receiving a low grade on our Milestone 2, it was necessary to revisit and
 - 05.12.23: Redo Milestone 2, keep the things that are usable. Work out new research questions and overall goal of the project.
 - 08.12.23: Gather necessary additional datasets and make start with research questions. 
 ---
-- 12.12.23: 
-- 15.12.23: 
-- 18.12.23: 
+- 12.12.23: Sentiment analysis
+- 15.12.23: Actor & pronoun density
+- 18.12.23: Random Forest
 ---
 - 20.12.23: Combine all notebooks and unify for the deliverable
 - 21.12.23: Make up datastory & alter plots for interactive use 
