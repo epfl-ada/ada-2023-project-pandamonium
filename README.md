@@ -55,11 +55,6 @@ The vanilla CMU dataset does not contain the Bechdel Test Score for the movies. 
 
 
 
-####
-
-
-
-
 
 
 ### Linear Regression: OLS
@@ -74,13 +69,13 @@ Due to receiving a low grade on our Milestone 2, it was necessary to revisit and
 - 1.12.23: Discuss feedback of Milestone 2 with mentor.
 ---
 - 05.12.23: Redo Milestone 2, keep the things that are usable. Work out new research questions and overall goal of the project.
-- 08.12.23: Gather necessary additional datasets and make start 
+- 08.12.23: Gather necessary additional datasets and make start with research questions. 
 ---
 - 12.12.23: 
 - 15.12.23: 
-- 18.12.23
+- 18.12.23: 
 ---
-- 20.12.23: Gather all necessary plots
+- 20.12.23: Combine all notebooks and unify for the deliverable
 - 21.12.23: Make up datastory & alter plots for interactive use 
 - 22.12.23: **Project milestone 3 deadline** 
 
@@ -99,7 +94,7 @@ Nonetheless, we assign some overall responsibilities of the project for each per
 <thead>
   <tr>
     <th class="tg-0lax"></th>
-    <th class="tg-0lax">Tasks</th>
+    <th class="tg-0lax">Contributions</th>
   </tr>
 </thead>
 <tbody>
@@ -109,7 +104,7 @@ Nonetheless, we assign some overall responsibilities of the project for each per
   </tr>
   <tr>
     <td class="tg-0lax">Deniz</td>
-    <td class="tg-0lax">Machine learning<br><br>Scraping<br><br>Advanced coding</td>
+    <td class="tg-0lax">Machine learning<br><br>Scraping<br><br>Notebook organisation</td>
   </tr>
   <tr>
     <td class="tg-0lax">Eren</td>
@@ -117,7 +112,7 @@ Nonetheless, we assign some overall responsibilities of the project for each per
   </tr>
   <tr>
     <td class="tg-0lax">Riza</td>
-    <td class="tg-0lax">Natural Language Processing<br><br>Overall planning<br><br>Visualizations</td>
+    <td class="tg-0lax">Natural Language Processing<br><br>Overall planning<br><br>Statistical Analysis</td>
   </tr>
   <tr>
     <td class="tg-0lax">Matthijs</td>
