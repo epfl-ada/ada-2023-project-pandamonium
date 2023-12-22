@@ -5,6 +5,7 @@
 Gender equality is a pressing issue in today's world, and for good reason. Consequently, we are dedicated to exploring women's representation in the world of cinema. Join us in our quest to find out how well represented women really are and see how we try redefine the metrics for women's representation in our [Datastory](https://matthijsscheerder.github.io/PandamoniumWebsite/)!
 
 ## Abstract
+
 The Bechdel Test is a simple test to measure the prominence of women in movies. The test consists of three conditions to be satisfied:
 1. The cast of the movie contains two women characters,
 2. They talk to each other,
@@ -29,8 +30,13 @@ In "Scripted Sisterhood," we scrutinize the portrayal of women in film through t
 ## Proposed Additional Datasets
 -[**Bechdel Test**](https://bechdeltest.com/) - The Bechdel Test Movie List, comprising more than 10,130 movies, is retrieved through its API, offering a dataset with seven fields. Key features include imdbid (facilitating integration with other datasets), title, year, and rating. The rating scale delineates the Bechdel Test outcomes: 0 signifies the absence of two women, 1 indicates no conversation, 2 denotes discussion about a man, and 3 signifies a successful passage of the test. 
 
+-[**GII**](https://ourworldindata.org/grapher/gender-inequality-index-from-the-human-development-report?tab=chart) - The Gender Inequality Index can be readily downloaded and is used to enhance our dataset. .This index provides a comprehensive (quantitative) view of the challenges women face in different countries, highlighting areas where progress is needed to achieve greater gender equality. The lower the value the higher the equality between genders.
 
--[**Inflation (CPI)**](https://www.officialdata.org/us/inflation/1923?amount=1) - In order to ensure a fair comparison of revenue/box office data between different movies we need to adjust for inflation. Since the box office revenue is listed in USD, we use historical data. By normalizing financial figures for inflation, we aim to assess the financial success of movies in real dollars, facilitating meaningful comparisons across different years.
+-[**HDI**](https://ourworldindata.org/grapher/human-development-index) - The Human Development Index can be readily downloaded and is used to enhance our dataset. This index offers valuable insights into a country's progress in improving the living standards and quality of life for its citizens. We want to see if this is also a predictor for women's represenation in cinema.
+
+
+
+
 
 ## Methods
 ### Bechdel Test Feature Addition ([bechdel_intersection.ipynb](bechdel_intersection.ipynb)):
