@@ -34,7 +34,6 @@ In "Scripted Sisterhood," we scrutinize the portrayal of women in film through t
 
 -[**HDI**](https://ourworldindata.org/grapher/human-development-index) - The Human Development Index can be readily downloaded and is used to enhance our dataset. This index offers valuable insights into a country's progress in improving the living standards and quality of life for its citizens. We want to see if this is also a predictor for women's represenation in cinema.
 
-
 ## Methods
 ### Bechdel Test Feature Addition:
 The vanilla CMU dataset does not contain the Bechdel Test Score for the movies. However, using an additional dataset that accounts for this, we may add this feature as a new column to our dataset. The aforementioned dataset contains the Bechdel score, year, and movie name for more than 10,000 movies. In order to add this new column, we took the intersection of two datasets, by iteratively comparing the name of the movies. However, we observed that for the same movie, names on two datasets may not exactly match, due to some typos. For this, we have utilized some string-matching algorithms between datasets. We are running Fuzzy String-Matching algorithm on the two names and if they are above a certain threshold, we check the years on two datasets. If they match, that particular movie is added to the intersection dataset. Without the string-matching, we have 5553 movies on the intersection dataset, whereas, with the matching, we raise that number to 6521. It is favorable for us start with a dataset as large as possible.
@@ -66,15 +65,11 @@ The process involves categorizing the sentiment of each summary into three moods
 
 This approach not only simplifies sentiment analysis but also provides valuable insights into the emotional content of movie narratives, enhancing our understanding of their impact and tone.
 
-###### TextBlob - polarity
+###### TextBlob (polarity)
 In our approach, we aimed to calculate a polarity score for each movie's plot summary, starting with a baseline using the [TextBlob library](https://textblob.readthedocs.io/en/dev/quickstart.html). 
 
-
-
-
 ### Linear Regression: OLS
-We want to predict the movie success by finding a correlation between different variables, focusing on the women's participation metrics the Bechdel test, and female cast ratio. Movie success can be defined broadly by either box office revenue, ratings, ROI, etc.
-
+During the project, we employed linear regression to identify correlations deserving further investigation and exploration.
 
 ## Executed timeline
 Due to receiving a low grade on our Milestone 2, it was necessary to revisit and revise our project. Consequently, our project timeline has also undergone significant changes. Since we got the feedback late we also had to radically alter our planning.  
@@ -93,8 +88,6 @@ Due to receiving a low grade on our Milestone 2, it was necessary to revisit and
 - 20.12.23: Combine all notebooks and unify for the deliverable
 - 21.12.23: Make up datastory & alter plots for interactive use 
 - 22.12.23: **Project milestone 3 deadline** 
-
-
 
 ## Organisation within the team
 
