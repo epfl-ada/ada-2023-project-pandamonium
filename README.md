@@ -1,4 +1,4 @@
-# Scripted Sisterhood: An Analysis of Women's Representation in Movies Using Bechdel Test
+# Beyond the Bechdel Test: A New Era of Measuring Women's Representation in Cinema
 *Pandamonium: Tiago Freitas, Deniz Kasap, Riza Arseven, Eren Saydar and Matthijs Scheerder*
 
 ## Datastory
