@@ -4,7 +4,7 @@
 ## Datastory
 Gender equality is a pressing issue in today's world, and for good reason. Consequently, we are dedicated to exploring women's representation in the world of cinema. Join us in our quest to find out how well represented women really are and see how we try redefine the metrics for women's representation in our [Datastory](https://matthijsscheerder.github.io/PandamoniumWebsite/)!
 
-## Abstract
+## Abstract I write this last
 
 The Bechdel Test is a simple test to measure the prominence of women in movies. The test consists of three conditions to be satisfied:
 1. The cast of the movie contains two women characters,
@@ -35,39 +35,53 @@ In "Scripted Sisterhood," we scrutinize the portrayal of women in film through t
 -[**HDI**](https://ourworldindata.org/grapher/human-development-index) - The Human Development Index can be readily downloaded and is used to enhance our dataset. This index offers valuable insights into a country's progress in improving the living standards and quality of life for its citizens. We want to see if this is also a predictor for women's represenation in cinema.
 
 
-
-
-
 ## Methods
-### Bechdel Test Feature Addition ([bechdel_intersection.ipynb](bechdel_intersection.ipynb)):
-The vanilla CMU dataset does not contain the Bechdel Test Score for the movies. However, using an additional dataset that accounts for this, we may add this feature as a new column to our dataset. The aforementioned dataset contains the Bechdel score, year, and movie name for more than 10,000 movies. In order to add this new column, we took the intersection of two datasets, by iteratively comparing the name of the movies. However, we observed that for the same movie, names on two datasets may not exactly match, due to some typos. For this, we have utilized some string-matching algorithms between datasets. We are running Fuzzy String-Matching algorithm on the two names and if they are above a certain threshold, we check the years on two datasets. If they match, that particular movie is added to the intersection dataset. Without the string-matching, we have 5553 movies on the intersection dataset, whereas, with the matching, we raise that number to 6521, which is favorable for us to have an intersection as big as possible.
+### Bechdel Test Feature Addition:
+The vanilla CMU dataset does not contain the Bechdel Test Score for the movies. However, using an additional dataset that accounts for this, we may add this feature as a new column to our dataset. The aforementioned dataset contains the Bechdel score, year, and movie name for more than 10,000 movies. In order to add this new column, we took the intersection of two datasets, by iteratively comparing the name of the movies. However, we observed that for the same movie, names on two datasets may not exactly match, due to some typos. For this, we have utilized some string-matching algorithms between datasets. We are running Fuzzy String-Matching algorithm on the two names and if they are above a certain threshold, we check the years on two datasets. If they match, that particular movie is added to the intersection dataset. Without the string-matching, we have 5553 movies on the intersection dataset, whereas, with the matching, we raise that number to 6521. It is favorable for us start with a dataset as large as possible.
 
-### Data Analysis ([Milestone_P2.ipynb](Milestone_P2.ipynb))
-Utilizing the visualization tools we learned in the lecture, like line plots, bar plots, box plots, and histograms to do the first initial data analysis to extract some preliminary conclusions and get a visualization of the data to get the project rolling, we carried out the initial analysis. These analysis are done twice, both for the original CMU dataset and the Bechdel intersection dataset to get an idea about our dataset and distribution of the features.
+### Natural Language Processing
+#### Gender density
+
+
+
+
+#### Actor mentioning
+
+
+
+#### Sentiment analysis
+
+
+
+
+
+####
+
+
+
+
+
 
 ### Linear Regression: OLS
 We want to predict the movie success by finding a correlation between different variables, focusing on the women's participation metrics the Bechdel test, and female cast ratio. Movie success can be defined broadly by either box office revenue, ratings, ROI, etc.
 
 
-## Proposed timeline
-
-We have decided to have 2 internal deadlines for each week: Tuesday and Friday.  
+## Executed timeline
+Due to receiving a low grade on our Milestone 2, it was necessary to revisit and revise our project. Consequently, our project timeline has also undergone significant changes. Since we got the feedback late we also had to radically alter our planning.  
 
 - 17.11.23: **Project milestone 2 deadline**
 ---
-- 21.11.23: Start with more in-depth statistical analysis. Review past work/progress.
-- 24.11.23: Finish statistical analysis
+- 1.12.23: Discuss feedback of Milestone 2 with mentor.
 ---
-- 28.11.23: Each member works on homework 2
-- 01.12.23: **Homework 2 deadline**
+- 05.12.23: Redo Milestone 2, keep the things that are usable. Work out new research questions and overall goal of the project.
+- 08.12.23: Gather necessary additional datasets and make start 
 ---
-- 05.12.23: Linear Regression/advanced methods for prediction. Start advanced visualization.
-- 08.12.23: Finish visualizations and refinements. Review past work/progress, and alter the plan if necessary. 
+- 12.12.23: 
+- 15.12.23: 
+- 18.12.23
 ---
-- 12.12.23: All technical parts finished, start with datastory (website development).
-- 15.12.23: Finish data story
----
-- 20.12.23: Check all deliverables and update README. Deliberately scheduled less to have some buffer time.
+- 20.12.23: Gather all necessary plots
+- 21.12.23: Make up datastory & alter plots for interactive use 
 - 22.12.23: **Project milestone 3 deadline** 
 
 
@@ -91,23 +105,23 @@ Nonetheless, we assign some overall responsibilities of the project for each per
 <tbody>
   <tr>
     <td class="tg-0lax">Tiago</td>
-    <td class="tg-0lax">Initial data analysis<br><br>Visualizations<br><br>Notebook organisation</td>
+    <td class="tg-0lax">Data Analysis<br><br>Visualizations<br><br>Notebook organisation</td>
   </tr>
   <tr>
     <td class="tg-0lax">Deniz</td>
-    <td class="tg-0lax">Additional Datasets<br><br>Scraping<br><br>Advanced coding</td>
+    <td class="tg-0lax">Machine learning<br><br>Scraping<br><br>Advanced coding</td>
   </tr>
   <tr>
     <td class="tg-0lax">Eren</td>
-    <td class="tg-0lax">website development<br><br>Develop textual context for data story<br><br>Statistical Analysis</td>
+    <td class="tg-0lax">Scraping<br><br>Website & Datastory<br><br>Statistical Analysis</td>
   </tr>
   <tr>
     <td class="tg-0lax">Riza</td>
-    <td class="tg-0lax">Initial data analysis<br><br>Overall planning/responsible for meetings with mentor<br><br>Develop textual context for data story</td>
+    <td class="tg-0lax">Natural Language Processing<br><br>Overall planning<br><br>Visualizations</td>
   </tr>
   <tr>
     <td class="tg-0lax">Matthijs</td>
-    <td class="tg-0lax">Statistical Analysis<br><br>Visualizations<br><br>README</td>
+    <td class="tg-0lax">Machine learning<br><br>Website & Datastory<br><br>README</td>
     </tr>
 </tbody>
 </table>
